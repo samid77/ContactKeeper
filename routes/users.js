@@ -4,7 +4,7 @@ const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const { check, validationResult } = require('express-validator/check');
+const { check, validationResult } = require('express-validator');
 
 // @route     POST api/users
 // @desc      Register a user
@@ -28,8 +28,8 @@ router.post(
             return res.status(400).json({ errors: errors.array()});
         }
         const { name, email, password } = req.body;
+ 
         try {
-         
          //Check if the user alrerady exists
          let user = await User.findOne({email: email});
          if(user) {
