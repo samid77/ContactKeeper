@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb://samid77:rahasia2020@contactkeeper-shard-00-00-jvqz3.mongodb.net:27017,contactkeeper-shard-00-01-jvqz3.mongodb.net:27017,contactkeeper-shard-00-02-jvqz3.mongodb.net:27017/test?ssl=true&replicaSet=ContactKeeper-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "jwtSecret": "rahasia"
+}
